@@ -1,0 +1,125 @@
+<div class="modal fade bd-example-modal-lg" id="createModal" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Create Member</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form class="form-member">
+                    <h5>Personal Details</h6>
+                        <div class="form-group row">
+                            <label class="control-label col-sm-3 align-self-center" for="username">username:</label>
+                            <div class="col-sm-9">
+                                <input name="username" class="form-control" id="username"
+                                    placeholder="Enter Your username">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-sm-3 align-self-center" for="pwd1">Password:</label>
+                            <div class="col-sm-9">
+                                <input name="password" type="password" class="form-control" id="pwd1"
+                                    placeholder="Enter Your password">
+                            </div>
+                        </div>
+                        <h5>Account Detail</h5>
+                        <div class="form-group row">
+                            <label class="control-label col-sm-3 align-self-center" for="pwd1">Sponsor Name:</label>
+                            <div class="col-sm-9">
+                                <select name="agent" class="form-control form-control-lg">
+                                    <option selected="">Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-sm-3 align-self-center" for="pwd1">Account Type:</label>
+                            <div class="col-sm-9">
+                                <select name="agent" class="form-control form-control-lg">
+                                    <option selected="">Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-sm-3 align-self-center" for="pwd1">Sales Mode:</label>
+                            <div class="col-sm-9">
+                                <select name="agent" class="form-control form-control-lg">
+                                    <option selected="">Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="packages">
+                            <div class="form-group row">
+                                <label class="control-label col-sm-3 align-self-center" for="pwd1">Credit Limit:</label>
+                                <div class="col-sm-9">
+                                    <input name="credit_limit" type="number" class="form-control" id="pwd1" placeholder="(Max Credit Limit: -)
+            ">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label col-sm-3 align-self-center" for="pwd1">Comm Lvl. 3A:</label>
+                                <div class="col-sm-9">
+                                    <input name="Price3ACommission" type="number" class="form-control" id="pwd1"
+                                        placeholder="(Max Commission 3A: -)">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label col-sm-3 align-self-center" for="pwd1">Comm Lvl. 2A:</label>
+                                <div class="col-sm-9">
+                                    <input name="Price2ACommission" type="number" class="form-control" id="pwd1"
+                                        placeholder="(Max Commission 2A: -)
+            ">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label col-sm-3 align-self-center" for="pwd1">Comm Lvl. 2B:</label>
+                                <div class="col-sm-9">
+                                    <input name="Price2BCommission" type="number" class="form-control" id="pwd1"
+                                        placeholder="(Max Commission 2B: -)">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label col-sm-3 align-self-center" for="pwd1">Prize 3A:</label>
+                                <div class="col-sm-9">
+                                    <input name="Price3ALeverage" type="number" class="form-control" id="pwd1"
+                                        placeholder="(Max Prize Odds 3A: -)">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label col-sm-3 align-self-center" for="pwd1">Prize 2A:</label>
+                                <div class="col-sm-9">
+                                    <input name="Price2ALeverage" type="number" class="form-control" id="pwd1"
+                                        placeholder="(Max Prize Odds 2A: -)">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label col-sm-3 align-self-center" for="pwd1">Prize 2B:</label>
+                                <div class="col-sm-9">
+                                    <input name="Price2BLeverage" type="number" class="form-control" id="pwd1"
+                                        placeholder="(Max Prize Odds 2B: -)">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" onclick="submitMember()" class="btn btn-primary">Save changes</button>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="submitMember()" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

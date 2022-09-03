@@ -1,0 +1,31 @@
+<!-- Backend Bundle JavaScript -->
+  <script src="/js/backend-bundle.min.js"></script>
+  
+  <!-- Table Treeview JavaScript -->
+  <script src="/js/table-treeview.js"></script>
+  
+  <!-- Chart Custom JavaScript -->
+  <script src="/js/customizer.js"></script>
+  
+  <!-- Chart Custom JavaScript -->
+  <script async src="/js/chart-custom.js"></script>
+  <script src="/js/charts/01.js?v=1.0.1"></script>
+  <script src="/js/charts/02.js?v=1.0.1"></script>
+  <!-- Chart Custom JavaScript -->
+  <script async src="/js/slider.js"></script>
+  
+  <!-- app JavaScript -->
+  <script src="/js/app.js?v=1.0.1"></script>
+  <script>
+    backendUrl = 'http://localhost:3000';
+
+    function changeLng() {
+      const currentLng = $("input[name='lng']").val();
+      console.log(currentLng)
+      if (currentLng != "en") {
+        window.location.href = '?lng=' + "en";
+      } else{
+        window.location.href = '?lng=' + "cn";
+      }
+    }
+  </script>

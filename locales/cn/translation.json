@@ -1,0 +1,13 @@
+{
+    "sidebar": {
+        "language": "中文",
+        "sales": "销售",
+        "admin": "管理员",
+        "report": {
+            "winning": "得奖报表",
+            "lucky_number": "幸运报表",
+            "commission": "佣金报表",
+            "report": "报表"
+        }
+    }
+}

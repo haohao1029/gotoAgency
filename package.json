@@ -1,0 +1,20 @@
+{
+  "name": "gotoagency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "i18next": "^21.9.1",
+    "i18next-fs-backend": "^1.1.5",
+    "i18next-http-middleware": "^3.2.1"
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="">
+    <!-- loader Start -->
+    <div id="loading">
+        <div id="loading-center">
+        </div>
+    </div>
+    <!-- loader END -->
+
+
+    <main>
+
+        <!-- Wrapper Start -->
+        <div class="wrapper"
+            style="background: url(/images/background.png); background-attachment: fixed; background-size: cover; ">
+            <%- include('../partials/sidebar'); %>
+                <%- include('../partials/header'); %>
+                    <div class="content-page">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header d-flex justify-content-between">
+                                            <div class="header-title">
+                                                <h4 class="card-title">Sales Listing</h4>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table id="datatable" class="table data-table table-striped">
+                                                    <thead>
+                                                        <tr class="">
+                                                            <th>Name</th>
+                                                            <th>Position</th>
+                                                            <th>Office</th>
+                                                            <th>Age</th>
+                                                            <th>Start date</th>
+                                                            <th>Salary</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                            <button type="button" data-toggle="modal" data-target="#createModal"
+                                                class="btn btn-primary mt-2">CREATE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </main>
+    <%- include('./create'); %>
+
+        <footer>
+            <%- include('../partials/footer'); %>
+                <script>
+                    $(document).ready(() => {
+                        $("#datatable").DataTable({
+                            processing: true,
+                            serverSide: true,
+                            contentType: "application/json",
+                            ajax: {
+                                url: "localhost:3000/datatable_test",
+                                type: "GET",
+                                columns: [{
+                                    data: "name",
+                                    title: "Name"
+                                },
+                                {
+                                    data: "position",
+                                    title: "Position"
+                                },
+                                ]
+                            },
+                        })
+                    })
+
+                    function submitSales() {
+                        $.ajax({
+                            url: backendUrl + "/sales",
+                            type: "POST",
+                            data: {
+                                agent: $("select[name=agent]").val(),
+                                sales_method: $("textarea[name=sales_method]").val()
+                            },
+                            success: function (data) {
+                                console.log(data)
+                            },
+                            error: function (data) {
+                                console.log(data)
+                            }
+                        })
+                    }
+                </script>
+
+        </footer>
+
+</body>
+
+</html>

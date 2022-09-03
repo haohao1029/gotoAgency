@@ -1,0 +1,13 @@
+{
+    "sidebar": {
+        "language": "en",
+        "sales": "sales",
+        "admin": "admin",
+        "report": {
+            "winning": "winning report",
+            "lucky_number": "lucky number report",
+            "commission": "commission report",
+            "report": "report"
+        }
+    }
+}
