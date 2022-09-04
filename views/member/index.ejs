@@ -29,7 +29,6 @@
                                         <div class="card-header d-flex justify-content-between">
                                             <div class="header-title">
                                                 <h4 class="card-title">Member Listing</h4>
-
                                             </div>
                                         </div>
                                         <div class="card-body">
@@ -37,14 +36,63 @@
                                                 <table id="datatable" class="table data-table table-striped">
                                                     <thead>
                                                         <tr class="">
-                                                            <th>Name</th>
-                                                            <th>Position</th>
-                                                            <th>Office</th>
-                                                            <th>Age</th>
-                                                            <th>Start date</th>
-                                                            <th>Salary</th>
+                                                            <th>Register Date</th>
+                                                            <th>Username</th>
+                                                            <th>Account Type</th>
+                                                            <th>Sponsor Name</th>
+                                                            <th>Bet Mode</th>
+                                                            <th>Credit Limit</th>
+                                                            <th>Comm Lvl. 3A</th>
+                                                            <th>Comm Lvl. 2A</th>
+                                                            <th>Comm Lvl. 2B</th>
+                                                            <th>Price 3A</th>
+                                                            <th>Price 2A</th>
+                                                            <th>Price 2B</th>
+                                                            <th>Status</th>
+                                                            <th>Action</th>
                                                         </tr>
                                                     </thead>
+                                                    <tbody>
+                                                        <tr role="row" class="odd selected">
+                                                            <td>2022-09-04 00:26:09</td>
+                                                            <td>macao0001a1b</td>
+                                                            <td>Agent</td>
+                                                            <td>macao0001a1</td>
+                                                            <td>Postpaid</td>
+                                                            <td>
+                                                                <p style="text-align:right">50,000</p>
+                                                            </td>
+                                                            <td>
+                                                                <p style="text-align:right">28</p>
+                                                            </td>
+                                                            <td>
+                                                                <p style="text-align:right">18</p>
+                                                            </td>
+                                                            <td>
+                                                                <p style="text-align:right">18</p>
+                                                            </td>
+                                                            <td>
+                                                                <p style="text-align:right">500</p>
+                                                            </td>
+                                                            <td>
+                                                                <p style="text-align:right">60</p>
+                                                            </td>
+                                                            <td>
+                                                                <p style="text-align:right">60</p>
+                                                            </td>
+                                                            <td>Active</td>
+                                                            <td><button class="btn btn-primary">
+                                                                Update
+                                                            </button>
+                                                            <button class="btn btn-secondary">
+                                                                View Statement
+                                                            </button>
+                                                            <button class="btn btn-danger">
+                                                                Suspend
+                                                            </button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
                                                 </table>
                                             </div>
                                             <button type="button" data-toggle="modal" data-target="#createModal"
@@ -57,25 +105,23 @@
                     </div>
         </div>
     </main>
-                <%- include('./create'); %>
-      
-    <footer>
-        <%- include('../partials/footer'); %>
-            <script>
-            // $(document).ready(() => {
-            //     $("#datatable").DataTable({
-            //         processing: true,
-            //         serverSide: true,
-            //         contentType: "application/json",
+    <%- include('./create'); %>
 
-            //          columns: [
+        <footer>
+            <%- include('../partials/footer'); %>
+                <script>
+                    $(document).ready(() => {
+                        // $("#datatable").DataTable({
+                        //         processing: true,
+                        //         serverSide: true,
+                        //         contentType: "application/json",
+                        //          columns: [
+                        //          ]
+                        // })
+                    })
+                </script>
 
-            //          ]
-            //     })
-            // })
-            </script>
-
-    </footer>
+        </footer>
 
 </body>
 

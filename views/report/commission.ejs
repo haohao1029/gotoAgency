@@ -20,13 +20,117 @@
         <div class="wrapper"
             style="background: url(/images/background.png); background-attachment: fixed; background-size: cover; ">
             <%- include('../partials/sidebar'); %>
-            <%- include('../partials/header'); %>
-        </div>
-</main>
+                <%- include('../partials/header'); %>
+                    <div class="content-page">
+                        <div class="container-fluid">
+                            <h4 class="card-title">Commission Report</h4>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="search-content">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="floating-label form-group">
+                                                    <input class="floating-input form-control" type="username"
+                                                        placeholder=" ">
+                                                    <label>From Match ID</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="floating-label form-group">
+                                                    <input class="floating-input form-control" type="username"
+                                                        placeholder=" ">
+                                                    <label>To Match ID</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="floating-label form-group">
+                                                    <input class="floating-input form-control" type="username"
+                                                        placeholder=" ">
+                                                    <label>Username</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <button type="button" class="btn btn-primary">
+                                                    Submit
+                                                </button> <button type="button" class="btn btn-secondary">
+                                                    Export Excel
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between">
+                                    <div class="header-title">
+                                        <h4 class="card-title">Commission Report</h4>
 
-<footer>
-    <%- include('../partials/footer'); %>
-</footer>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Username</th>
+                                                    <th>DL. Total Bet</th>
+                                                    <th>Total Betting</th>
+                                                    <th>Total Commission</th>
+                                                    <th>Actual Balance</th>
+                                                    <th>Total Win</th>
+                                                    <th>Settlement</th>
+                                                    <th>Total Balance</th>
+                                                    <th>Commission Earned</th>
+                                                    <th>P.Out Earned</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a type="submit" name="search_name" class="text-primary"
+                                                            value="mctest001">mctest001</a>
+                                                    </td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>
+                                                        <a href="" class="btn btn-success">View Settlement</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Grand Total :</b></td>
+                                                    <td><b>0.00</b></td>
+                                                    <td><b>0.00</b></td>
+                                                    <td><b>0.00</b></td>
+                                                    <td><b>0.00</b></td>
+                                                    <td><b>0.00<b></b></b></td>
+                                                    <td><b>0.00<b></b></b></td>
+                                                    <td><b>0.00</b></td>
+                                                    <td><b>0.00<b></b></b></td>
+                                                    <td><b>0.00<b></b></b></td>
+
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
 
 </body>
 
